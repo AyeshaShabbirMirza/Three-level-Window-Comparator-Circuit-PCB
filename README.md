@@ -3,20 +3,20 @@ This project aims to create a three-level window comparator circuit with LEDs us
 <br>
 Circuit Design Procedure:<br>
 
-Components Required:<br>
-Component Name	                                 <pre>            Quantity	      <pre>                         Purpose<br>
-LM741 Operational Amplifiers	                   <pre>                2	            <pre>                     Comparator IC<br>
-Resistors (R1, R2, R3, R4, R5, R6, R7)
-                                                   <pre>     R1 = R2 = R3 = 10kΩ <br>
-                                                 <pre>         R4 = R7 = 1kΩ <br>
-                                                     <pre>     R5 = R6 = 470Ω	                  <pre>         7	Voltage Divider Network and Current Limiting<br>
-LEDs                                      <pre>    (Led1 - Yellow, Led2 - Green, Led3 - Red)	  <pre>           3	Visual Indication<br>
-Center-Tapped Transformer	                           <pre>            1	          <pre>                       AC to AC Step-Down Transformer<br>
-Bridge Rectifier (1N400x series)	                  <pre>             1	                      <pre>           AC to DC Rectification<br>
-Filter Capacitors (100uF)	                            <pre>           2	                    <pre>             Smoothing of Rectified DC<br>
-LM7812 Positive Voltage Regulator	                    <pre>           1	                    <pre>             Positive Voltage Regulation (for +12V)<br>
-LM7912 Negative Voltage Regulator	                     <pre>          1	                     <pre>            Negative Voltage Regulation (for -12V)<br>
-Potentiometer 1MΩ	                                       <pre>        1	                      <pre>           For Controlling Input Voltage<br>
+### Components Required:
+
+Component Name | Quantity | Purpose
+--------------|----------|---------
+LM741 Operational Amplifiers | 2 | Comparator IC
+Resistors (R1, R2, R3, R4, R5, R6, R7) | - | -
+   R1 = R2 = R3 = 10kΩ <br> R4 = R7 = 1kΩ <br> R5 = R6 = 470Ω | 7 | Voltage Divider Network and Current Limiting
+LEDs (Led1 - Yellow, Led2 - Green, Led3 - Red) | 3 | Visual Indication
+Center-Tapped Transformer | 1 | AC to AC Step-Down Transformer
+Bridge Rectifier (1N400x series) | 1 | AC to DC Rectification
+Filter Capacitors (100uF) | 2 | Smoothing of Rectified DC
+LM7812 Positive Voltage Regulator | 1 | Positive Voltage Regulation (for +12V)
+LM7912 Negative Voltage Regulator | 1 | Negative Voltage Regulation (for -12V)
+Potentiometer 1MΩ | 1 | For Controlling Input Voltage
 
 Procedure:<br>
 

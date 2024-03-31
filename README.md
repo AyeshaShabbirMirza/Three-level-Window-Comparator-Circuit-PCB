@@ -4,19 +4,19 @@ This project aims to create a three-level window comparator circuit with LEDs us
 Circuit Design Procedure:<br>
 
 Components Required:<br>
-Component Name	                                             Quantity	                               Purpose<br>
-LM741 Operational Amplifiers	                                   2	                                 Comparator IC<br>
+Component Name	                                 <pre>            Quantity	      <pre>                         Purpose<br>
+LM741 Operational Amplifiers	                   <pre>                2	            <pre>                     Comparator IC<br>
 Resistors (R1, R2, R3, R4, R5, R6, R7)
-                                                        R1 = R2 = R3 = 10kΩ <br>
-                                                          R4 = R7 = 1kΩ <br>
-                                                          R5 = R6 = 470Ω	                           7	Voltage Divider Network and Current Limiting<br>
-LEDs                                          (Led1 - Yellow, Led2 - Green, Led3 - Red)	             3	Visual Indication<br>
-Center-Tapped Transformer	                                       1	                                 AC to AC Step-Down Transformer<br>
-Bridge Rectifier (1N400x series)	                               1	                                 AC to DC Rectification<br>
-Filter Capacitors (100uF)	                                       2	                                 Smoothing of Rectified DC<br>
-LM7812 Positive Voltage Regulator	                               1	                                 Positive Voltage Regulation (for +12V)<br>
-LM7912 Negative Voltage Regulator	                               1	                                 Negative Voltage Regulation (for -12V)<br>
-Potentiometer 1MΩ	                                               1	                                 For Controlling Input Voltage<br>
+                                                   <pre>     R1 = R2 = R3 = 10kΩ <br>
+                                                 <pre>         R4 = R7 = 1kΩ <br>
+                                                     <pre>     R5 = R6 = 470Ω	                  <pre>         7	Voltage Divider Network and Current Limiting<br>
+LEDs                                      <pre>    (Led1 - Yellow, Led2 - Green, Led3 - Red)	  <pre>           3	Visual Indication<br>
+Center-Tapped Transformer	                           <pre>            1	          <pre>                       AC to AC Step-Down Transformer<br>
+Bridge Rectifier (1N400x series)	                  <pre>             1	                      <pre>           AC to DC Rectification<br>
+Filter Capacitors (100uF)	                            <pre>           2	                    <pre>             Smoothing of Rectified DC<br>
+LM7812 Positive Voltage Regulator	                    <pre>           1	                    <pre>             Positive Voltage Regulation (for +12V)<br>
+LM7912 Negative Voltage Regulator	                     <pre>          1	                     <pre>            Negative Voltage Regulation (for -12V)<br>
+Potentiometer 1MΩ	                                       <pre>        1	                      <pre>           For Controlling Input Voltage<br>
 
 Procedure:<br>
 
@@ -182,21 +182,21 @@ Window Comparator Circuit Working:<br>
  Led2 (Green) lights up when Vin is between Vref1 and Vref2.<br>
  Led3 (Red) lights up when Vin is greater than Vref2.<br>
 
-Vin (Input Voltage)	Vref1 (8V)	Vref2 (4V)	Vref (Vref1 + Vref2)	LED3 (Red)	LED2 (Green)	LED1 (Yellow)	Potentiometer Value (ohm)<br>
-         0V	             8V	         4V	             12V	            ON	         OFF	          OFF               	-<br>
-         1V	             8V	         4V	             12V	            ON           OFF           	OFF              	90.9<br>
-         2V              8V	         4V	             12V	            ON	         OFF	          OFF	              200<br>
-         3V	             8V	         4V	             12V	            ON	         OFF	          OFF	              334<br>
-         4V	             8V	         4V	             12V	            OFF	         ON	            OFF	              500<br>
-         5V	             8V	         4V	             12V	            OFF	         ON	            OFF	              714<br>
-         6V	             8V	         4V	             12V	            OFF	         ON	            OFF	              1000<br>
-         7V	             8V	         4V	             12V	            OFF	         ON	            OFF	              1400<br>
-         8V	             8V          4V	             12V	            OFF	         ON	            OFF	              2000<br>
-         9V	             8V	         4V	             12V	            OFF	         OFF	          ON	              3000<br>
-         10V	           8V	         4V	             12V	            OFF	         OFF	          ON	              5000<br>
-         11V	           8V	         4V	             12V	            OFF	         OFF	          ON	              11000<br>
-         12V	           8V	         4V	             12V	            OFF	         OFF	          ON	              1M<br>
-         
+Vin (Input Voltage)<pre>	    Vref1 (8V)<pre>	    Vref2 (4V)<pre>	 Vref (Vref1 + Vref2)<pre>	LED3 (Red)<pre>	LED2 (Green)<pre>	   LED1 (Yellow)<pre>	     Potentiometer<pre> Value (ohm)<br>
+   <pre>      0V	   <pre>          8V	    <pre>     4V	     <pre>        12V	      <pre>      ON	    <pre>      OFF	    <pre>       OFF        <pre>       	-<br>
+    <pre>     1V	   <pre>          8V	    <pre>     4V	     <pre>        12V	      <pre>      ON     <pre>      OFF       <pre>     	OFF       <pre>        	90.9<br>
+    <pre>     2V      <pre>         8V	    <pre>     4V	    <pre>         12V	      <pre>      ON	    <pre>      OFF	    <pre>       OFF	     <pre>           200<br>
+     <pre>    3V	    <pre>         8V	    <pre>     4V	     <pre>        12V	      <pre>      ON	    <pre>      OFF	     <pre>      OFF	      <pre>          334<br>
+     <pre>    4V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	   <pre>      ON	     <pre>      OFF	    <pre>            500<br>
+     <pre>    5V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	   <pre>      ON	     <pre>      OFF	    <pre>            714<br>
+   <pre>      6V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	    <pre>     ON	     <pre>      OFF	     <pre>           1000<br>
+   <pre>      7V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	    <pre>     ON	      <pre>     OFF	    <pre>            1400<br>
+   <pre>      8V	     <pre>        8V      <pre>     4V	     <pre>        12V	      <pre>      OFF	     <pre>    ON	      <pre>     OFF	    <pre>            2000<br>
+    <pre>     9V	     <pre>        8V	    <pre>     4V	    <pre>         12V	      <pre>      OFF	   <pre>     OFF	      <pre>     ON	        <pre>        3000<br>
+    <pre>     10V	     <pre>        8V	    <pre>     4V	     <pre>        12V	       <pre>     OFF	   <pre>     OFF	     <pre>      ON	        <pre>        5000<br>
+    <pre>     11V	     <pre>        8V	     <pre>    4V	     <pre>        12V	       <pre>     OFF	   <pre>     OFF	     <pre>      ON	       <pre>         11000<br>
+    <pre>     12V	     <pre>        8V	    <pre>     4V	     <pre>        12V	       <pre>     OFF	    <pre     OFF	     <pre>      ON	      <pre>          1M<br>
+          
 8.Feedback and Amplification:<br>
  The feedback loops in the operational amplifiers play a crucial role in adjusting the output based on Vin and the reference voltages.<br>
 9.AC to DC Conversion:<br>

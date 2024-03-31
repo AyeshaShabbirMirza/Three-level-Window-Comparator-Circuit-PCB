@@ -182,20 +182,24 @@ Window Comparator Circuit Working:<br>
  Led2 (Green) lights up when Vin is between Vref1 and Vref2.<br>
  Led3 (Red) lights up when Vin is greater than Vref2.<br>
 
-Vin (Input Voltage)<pre>	    Vref1 (8V)<pre>	    Vref2 (4V)<pre>	 Vref (Vref1 + Vref2)<pre>	LED3 (Red)<pre>	LED2 (Green)<pre>	   LED1 (Yellow)<pre>	     Potentiometer<pre> Value (ohm)<br>
-   <pre>      0V	   <pre>          8V	    <pre>     4V	     <pre>        12V	      <pre>      ON	    <pre>      OFF	    <pre>       OFF        <pre>       	-<br>
-    <pre>     1V	   <pre>          8V	    <pre>     4V	     <pre>        12V	      <pre>      ON     <pre>      OFF       <pre>     	OFF       <pre>        	90.9<br>
-    <pre>     2V      <pre>         8V	    <pre>     4V	    <pre>         12V	      <pre>      ON	    <pre>      OFF	    <pre>       OFF	     <pre>           200<br>
-     <pre>    3V	    <pre>         8V	    <pre>     4V	     <pre>        12V	      <pre>      ON	    <pre>      OFF	     <pre>      OFF	      <pre>          334<br>
-     <pre>    4V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	   <pre>      ON	     <pre>      OFF	    <pre>            500<br>
-     <pre>    5V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	   <pre>      ON	     <pre>      OFF	    <pre>            714<br>
-   <pre>      6V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	    <pre>     ON	     <pre>      OFF	     <pre>           1000<br>
-   <pre>      7V	     <pre>        8V	    <pre>     4V	     <pre>        12V	      <pre>      OFF	    <pre>     ON	      <pre>     OFF	    <pre>            1400<br>
-   <pre>      8V	     <pre>        8V      <pre>     4V	     <pre>        12V	      <pre>      OFF	     <pre>    ON	      <pre>     OFF	    <pre>            2000<br>
-    <pre>     9V	     <pre>        8V	    <pre>     4V	    <pre>         12V	      <pre>      OFF	   <pre>     OFF	      <pre>     ON	        <pre>        3000<br>
-    <pre>     10V	     <pre>        8V	    <pre>     4V	     <pre>        12V	       <pre>     OFF	   <pre>     OFF	     <pre>      ON	        <pre>        5000<br>
-    <pre>     11V	     <pre>        8V	     <pre>    4V	     <pre>        12V	       <pre>     OFF	   <pre>     OFF	     <pre>      ON	       <pre>         11000<br>
-    <pre>     12V	     <pre>        8V	    <pre>     4V	     <pre>        12V	       <pre>     OFF	    <pre     OFF	     <pre>      ON	      <pre>          1M<br>
+## Voltage Comparison Table
+
+| Vin (Input Voltage) | Vref1 (8V) | Vref2 (4V) | Vref (Vref1 + Vref2) | LED3 (Red) | LED2 (Green) | LED1 (Yellow) | Potentiometer Value (ohm) |
+|---------------------|------------|------------|-----------------------|------------|--------------|----------------|----------------------------|
+| 0V                  | 8V         | 4V         | 12V                   | ON         | OFF          | OFF            | -                          |
+| 1V                  | 8V         | 4V         | 12V                   | ON         | OFF          | OFF            | 90.9                       |
+| 2V                  | 8V         | 4V         | 12V                   | ON         | OFF          | OFF            | 200                        |
+| 3V                  | 8V         | 4V         | 12V                   | ON         | OFF          | OFF            | 334                        |
+| 4V                  | 8V         | 4V         | 12V                   | OFF        | ON           | OFF            | 500                        |
+| 5V                  | 8V         | 4V         | 12V                   | OFF        | ON           | OFF            | 714                        |
+| 6V                  | 8V         | 4V         | 12V                   | OFF        | ON           | OFF            | 1000                       |
+| 7V                  | 8V         | 4V         | 12V                   | OFF        | ON           | OFF            | 1400                       |
+| 8V                  | 8V         | 4V         | 12V                   | OFF        | ON           | OFF            | 2000                       |
+| 9V                  | 8V         | 4V         | 12V                   | OFF        | OFF          | ON             | 3000                       |
+| 10V                 | 8V         | 4V         | 12V                   | OFF        | OFF          | ON             | 5000                       |
+| 11V                 | 8V         | 4V         | 12V                   | OFF        | OFF          | ON             | 11000                      |
+| 12V                 | 8V         | 4V         | 12V                   | OFF        | OFF          | ON             | 1M                         |
+
           
 8.Feedback and Amplification:<br>
  The feedback loops in the operational amplifiers play a crucial role in adjusting the output based on Vin and the reference voltages.<br>
